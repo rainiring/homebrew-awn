@@ -5,21 +5,21 @@
 class Awn < Formula
   desc "awn homebrew test"
   homepage "github.com/rainiring/awn"
-  version "0.2.8"
+  version "0.2.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rainiring/awn/releases/download/v0.2.8/awn_Darwin_x86_64.tar.gz"
-      sha256 "1a688a10647dc727856471fd0bdf2bbe44ddf4efb481b28ada3007174babb8a3"
+      url "https://github.com/rainiring/awn/releases/download/v0.2.10/awn_Darwin_x86_64.tar.gz"
+      sha256 "ba72bb6088455daaae3457ca79ee22ad660f4a9f4faccb7597e23d8c13ea3ba9"
 
       def install
         bin.install "awn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rainiring/awn/releases/download/v0.2.8/awn_Darwin_arm64.tar.gz"
-      sha256 "86d50c07a538b29be04af26289a1ffaa393e64b4848c08d40bedc6d1bf07739d"
+      url "https://github.com/rainiring/awn/releases/download/v0.2.10/awn_Darwin_arm64.tar.gz"
+      sha256 "7d47ea8914339405bd049d425933aaa381ace5118e9b44131f7c62ee715c746a"
 
       def install
         bin.install "awn"
@@ -30,8 +30,8 @@ class Awn < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rainiring/awn/releases/download/v0.2.8/awn_Linux_x86_64.tar.gz"
-        sha256 "0ae52e5761c04b2aee4839602de56df193786a6d3f9629a5eb03356988a3cc16"
+        url "https://github.com/rainiring/awn/releases/download/v0.2.10/awn_Linux_x86_64.tar.gz"
+        sha256 "758484d9b27cae1b2b4de976b70c0bdd3073e1a76ca9f633e17bbb427ce0cbca"
 
         def install
           bin.install "awn"
@@ -40,8 +40,8 @@ class Awn < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rainiring/awn/releases/download/v0.2.8/awn_Linux_arm64.tar.gz"
-        sha256 "ee3135a5b6839e6c5a18520106eee166faae85334b648a6bbdccc0268a5e818d"
+        url "https://github.com/rainiring/awn/releases/download/v0.2.10/awn_Linux_arm64.tar.gz"
+        sha256 "804801e52a92b9bfd4150f3bfa0beaa0d77e10b75798fa3b9a936c37c052e070"
 
         def install
           bin.install "awn"
